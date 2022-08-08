@@ -8,6 +8,6 @@ mov R4 $255
 st R1 a
 st R2 b
 st R3 c
-mov R1 R2
+cmp R1 R2
 jlt lab
 lab: hlt

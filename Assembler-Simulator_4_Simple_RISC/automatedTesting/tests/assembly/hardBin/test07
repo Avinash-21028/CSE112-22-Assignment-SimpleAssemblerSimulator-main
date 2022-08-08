@@ -42,6 +42,8 @@ ld R1 input2
 ld R2 output1
 ld R3 output2
 xor R2 R1 R0
+mov R0 R0
+mov R1 R1
 or R3 R1 R0
 st R3 output2
 st R2 output1
@@ -53,6 +55,8 @@ ld R1 input2
 ld R2 output1
 ld R3 output2
 or R2 R1 R0
+not R0 R0
+not R1 R1
 xor R3 R1 R0
 st R3 output2
 st R2 output1

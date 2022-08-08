@@ -8,6 +8,8 @@ mov R4 $255
 st R1 x
 st R2 y
 st R3 z
-mov R2 R2
-mov R1 R1
+cmp R2 R1
+jgt lab1
+lab1:	add R1 R2 R3
+    	jmp end
 end: hlt
