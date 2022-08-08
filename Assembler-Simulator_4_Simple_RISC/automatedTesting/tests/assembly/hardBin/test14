@@ -1,0 +1,13 @@
+var x
+var y
+var z
+mov R1 $8
+mov R2 $9
+mov R3 $0
+mov R4 $255
+st R1 x
+st R2 y
+st R3 z
+mov R2 R2
+mov R1 R1
+end: hlt

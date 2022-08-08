@@ -1,0 +1,29 @@
+var crr
+var f
+var ct
+mov R1 $15
+mov R2 $1
+mov R5 $8
+st R2 f
+st R2 crr
+st R2 ct
+sub R1 R2 R1
+mov FLAGS R6
+rs R6 $3
+je end
+mov R0 R0
+ld R3 f
+mul R1 R3 R3
+mov FLAGS R4
+and R4 R5 R4
+mov R0 R0
+mov R0 R0
+add R2 R6 R6
+st R6 ct
+st R3 f
+sub R1 R2 R1
+mov R0 R0
+je end
+mov R0 R0
+mov R0 R0
+end: hlt

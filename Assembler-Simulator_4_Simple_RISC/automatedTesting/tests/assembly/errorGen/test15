@@ -1,0 +1,2 @@
+add  FLAGSR R0 R1
+hlt
